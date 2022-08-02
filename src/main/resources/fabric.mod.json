@@ -1,35 +1,47 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "cavers",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Cavers Culinary",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Linkle",
+    "AndEditor7"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/ValleyCraft-Dev-Team",
+    "sources": "https://github.com/ValleyCraft-Dev-Team/cavers-culinary"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/cavers/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.linkle.cavers.Main"
+    ],
+    "client": [
+      "net.linkle.cavers.client.Client"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "cavers.mixins.json"
   ],
+  
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/kfpmJ5PtnF"
+      }
+    }
+  },
 
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",
-    "minecraft": "~1.19",
+    "minecraft": "1.18.2",
     "java": ">=17"
   },
   "suggests": {

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "cavers:block/glowsquid_lantern"
+    },
+    "hanging=true": {
+      "model": "cavers:block/glowsquid_lantern_hanging"
+    }
+  }
+}
